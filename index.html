@@ -7,10 +7,11 @@
         body {
             margin: 0;
             height: 100vh;
-            background: #183153; /* bleu foncé marine */
+            background: #183153;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: Arial, sans-serif;
         }
         .carre {
             width: 960px;
@@ -18,10 +19,33 @@
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            overflow-y: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #183153;
+        }
+        .video {
+            margin: 20px auto;
+            text-align: center;
+        }
+        .video img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-    <div class="carre"></div>
+    <div class="carre">
+        <h1>🎬 Vidéos partagées depuis Discord</h1>
+
+        <!-- VIDEOS_START -->
+        <!-- Le bot insérera les nouvelles vidéos ici -->
+        <!-- VIDEOS_END -->
+
+    </div>
 </body>
 </html>
